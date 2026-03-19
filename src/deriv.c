@@ -28,6 +28,7 @@ DerivFloat deriv(DerivFloat (*f)(DerivFloat), const DerivFloat x) {
 	return (f(x + REFERENCE_EPS) - f(x)) / REFERENCE_EPS;
 }
 
+// TODO: Replace with (f(x + eps) - f(x - eps)) / (2 * eps) for more precision
 DerivFloat derivn(DerivFloat (*f)(DerivFloat), const DerivFloat x, const size_t n) {
 	const DerivFloat eps = powl(REFERENCE_EPS, 1.0l / n);
 	DerivFloat res = 0.0l;
