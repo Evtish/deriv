@@ -1,6 +1,6 @@
 # Functions
 
-- `deriv` - simply compute the 0-st derivative of a function `f`
+- `deriv` - simply compute the 1st derivative of a function `f`
 - `derivn` - compute the n-th derivative of a function `f` using Pascal's triagle
 
 ---
