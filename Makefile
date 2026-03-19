@@ -10,7 +10,7 @@ DEPENDENCY_FILES := $(OBJECT_FILES:.o=.d)
 EXEC_FILE := $(BUILD_DIR)/$(PROGRAM_NAME)
 
 CC := cc
-CFLAGS := -Wall -Wextra -std=c99 -pedantic -I$(INC_DIR) -save-temps=obj
+CFLAGS := -Wall -Wextra -std=c99 -pedantic -I$(INC_DIR)
 LDFLAGS := -lm
 
 all: $(EXEC_FILE)
